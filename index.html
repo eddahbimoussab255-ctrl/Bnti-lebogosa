@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101522" />
+  <title>Rachida, nti 7yati</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Rachida nti 7yati">R<span>♥</span>R</a>
+    <nav class="nav-links" aria-label="Navigation">
+      <a href="#reasons">3lach kan7ebek</a>
+      <a href="#letter">Risala lik</a>
+      <a href="#memories">Dhkrayatna</a>
+      <a href="#future">Lmosta9bal</a>
+    </nav>
+    <button class="sound-button" id="soundToggle" type="button" aria-pressed="false">
+      <span class="sound-icon">♫</span><span id="soundLabel">Lmousi9a ila bghiti</span>
+    </button>
+    <input class="audio-file-input" id="audioFileInput" type="file" accept="audio/*" />
+    <div class="audio-player is-visible" id="audioPlayer" aria-hidden="false">
+      <span class="audio-song-name" id="audioSongName">Lmousi9a dyal Rachida</span>
+      <button class="audio-play" id="audioPlay" type="button" aria-label="Bda wla 7bes lmousi9a">▶</button>
+      <input class="audio-progress" id="audioProgress" type="range" min="0" max="100" value="0" aria-label="T9addom dyal lmousi9a" />
+      <input class="audio-volume" id="audioVolume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Sout dyal lmousi9a" />
+      <audio id="audioElement" preload="metadata"></audio>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Hadi risala sghira l wa7da kbira f 9elbi</p>
+        <h1>Rachida,<br /><em>nti 7yati</em> kamla.</h1>
+        <p class="hero-text">Nti wa7da mn dakchi li ma kayt3awdch f had denya. W ana ma bghitch nfer7ek ghir nhar, bghit nkoun sabab f de7ketek kol nhar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#letter">Qray risalti <span>↘</span></a>
+          <button class="button button-quiet" id="heroSurprise" type="button">Klik hna <span>♥</span></button>
+        </div>
+        <div class="hero-note"><span class="tiny-heart">♥</span> Mn 9elbi lik, bla tzyif bla 7chma</div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="photo-frame main-frame">
+          <div class="photo-glow"></div>
+          <div class="photo-inner">
+            <span class="photo-script">Rachida</span>
+            <span class="photo-caption">ahla wa7da f 3iniya</span>
+            <span class="photo-mark">R + R</span>
+          </div>
+          <div class="frame-sticker sticker-top">♥</div>
+          <div class="frame-sticker sticker-bottom">m3ak l akhir</div>
+        </div>
+        <div class="orbit-note"><span>01</span><i></i> wa7ed l9alb, wa7ed l7ob</div>
+      </div>
+    </section>
+
+    <section class="reasons section-shell" id="reasons">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHNO KAYN F 9ELBI</p>
+        <h2>3lach <em>kan7ebek</em></h2>
+        <p>Hitach nti machi ghir zwina. Nti dak l i7sas li kaykhelli nhari 7sen.</p>
+      </div>
+      <div class="reason-grid">
+        <article class="reason-card reveal"><span class="card-number">01</span><div class="card-icon">✦</div><h3>De7ketek</h3><p>De7ketek katdwi aktar mn ay chms, w katkhlli 9elbi ydir l7afla bo7do.</p></article>
+        <article class="reason-card featured reveal reveal-delay"><span class="card-number">02</span><div class="card-icon">♡</div><h3>9elbek</h3><p>Fik wa7ed l7nan kaykhlli l3alam kamel yban lia b7al dar.</p></article>
+        <article class="reason-card reveal reveal-delay-two"><span class="card-number">03</span><div class="card-icon">↗</div><h3>7odork</h3><p>Mn nhar 3reftk w ana kan7ess belli l7ayat wlat zwina kter.</p></article>
+      </div>
+    </section>
+
+    <section class="messages section-shell">
+      <div class="message-intro reveal"><p class="eyebrow">KALAM MN 9ELBI</p><h2>Klam li ma<br /><em>kayt9adch</em> ytskt.</h2></div>
+      <div class="quote-stack">
+        <blockquote class="quote-card quote-main reveal"><span class="quote-mark">“</span><p>F kol mara kanchofk, kan3awd nktachf belli ana rab7t a7la insan f had l7ayat.</p><footer>— mn wa7ed li m3ajeb bik bzzaf</footer></blockquote>
+        <blockquote class="quote-card quote-small reveal reveal-delay"><p>Nti l risala zwina li kanbghi n9raha kol sba7.</p><footer>— Rachida, nti l jaw kamel</footer></blockquote>
+      </div>
+    </section>
+
+    <section class="letter section-shell" id="letter">
+      <div class="letter-label reveal"><span class="vertical-line"></span><p>RISALA<br />LIK</p><span class="letter-count">04 / 06</span></div>
+      <div class="letter-content reveal reveal-delay">
+        <p class="eyebrow">L RACHIDA DYALI</p>
+        <h2>Qalbi kaykteb lik<br /><em>bla ma ytsenna.</em></h2>
+        <div class="letter-body">
+          <p>Rachida, bghitk t3rfi belli nti wa7da mn a9wa l7wayj li w9e3o lia. Ma3rftch kifach ndir wa7ed lklam y9der ywsef ch7al nti 3ziza 3lia, walakin ghadi n7awel.</p>
+          <p>Mn nhar dkhlti l7yati, w kolchi bda kayakhod lon akhor. Sba7 wla fih sabab nfi9 far7an, w lil wla fih wa7ed l9alb kaychker rabbi 3lik. Nti kat3tini lmotivation bla ma t9sdi, w katkhllini nbghi nkoun a7sen wa7ed, 7it nti katstahli a7sen wa7ed.</p>
+          <p>Kanbghi fik de7ketek, 7chmtk, dak l3nad zwin dyalek, w 7ta fach katb9ay t9oli “la” w 9elbek kaygol “ah” 😂. Kanbghi kol tafsila fik, 7ta hadok li nti ma kat3jbekch.</p>
+          <p>W ila l7ayat 3tatni ghir wa7ed l ikhtiyar, ghadi nkhtarek nti kol mara. 7it nti machi ghir 7obbi, nti <strong>7yati kamla.</strong></p>
+          <p class="letter-signoff">Dima dyalek,<br /><em>wa7ed kay7ebek aktar mn ma kay9der ygol</em> ♥</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="playful section-shell">
+      <div class="section-heading centered reveal"><p class="eyebrow">WACH MAZAL KAT7CHMI?</p><h2>Chwiya dyal <em>l7chma</em> 😏</h2><p>Hit l7ob bla de7k kayb9a na9es wa7ed l7aja.</p></div>
+      <div class="tease-grid">
+        <article class="tease-card reveal"><span>01</span><p>Db kat7chmi mn had lklam? Sberii 3lia 7tta ntzwjo 😂♥</p></article>
+        <article class="tease-card tease-accent reveal reveal-delay"><span>02</span><p>Wa7ed nhar ghadi tgoli: “safi 7chmtini” w ana ngolik: mazal mabdit walo 😌</p></article>
+        <article class="tease-card reveal reveal-delay-two"><span>03</span><p>Rah ana daba kanhder b l7chma... wach bghitini nkmel? 😂</p></article>
+      </div>
+    </section>
+
+    <section class="memories section-shell" id="memories">
+      <div class="memory-heading reveal">
+        <div>
+          <p class="eyebrow">DHKRAYATNA <span class="eyebrow-heart">♥</span></p>
+          <h2>Kol tswira<br /><em>3andha 7kaya.</em></h2>
+        </div>
+        <p>Hna ghadi yb9aw lmoment li khllaw 9elbna ybtssem. Zid tsawrek m3a Rachida f lmasarat li ta7t.</p>
+      </div>
+
+      <!--
+        TSAYB LTSAWER DYALK HNA: assets/images/
+        Bddl ghir smiyat photo1.jpg 7tta photo10.jpg b tsawrek nta w Rachida.
+        T9der tsta3mel JPG, PNG, wla WEBP. Khlli nafs lmasar f src dyal kol tswira.
+      -->
+      <div class="memory-wall" id="memoryWall">
+        <!-- Bddl assets/images/photo1.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-one reveal" tabindex="0" role="button" data-image="assets/images/photo1.jpg" data-caption="Awel dhkra ♥">
+          <span class="memory-image"><img alt="Awel dhkra m3a Rachida" /></span><span class="memory-caption">Awel dhkra ♥</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo2.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-two reveal reveal-delay" tabindex="0" role="button" data-image="assets/images/photo2.jpg" data-caption="Wa7ed nhar ma ghadi nchdouch men balna">
+          <span class="memory-image"><img alt="Wa7ed nhar ma ghadi nchdouch men balna" /></span><span class="memory-caption">Wa7ed nhar ma ghadi nchdouch men balna</span><span class="memory-pin">✦</span>
+        </article>
+        <!-- Bddl assets/images/photo3.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-three reveal reveal-delay-two" tabindex="0" role="button" data-image="assets/images/photo3.jpg" data-caption="De7ketek li kanmout 3liha ♥">
+          <span class="memory-image"><img alt="De7ketek li kanmout 3liha" /></span><span class="memory-caption">De7ketek li kanmout 3liha ♥</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo4.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-four reveal" tabindex="0" role="button" data-image="assets/images/photo4.jpg" data-caption="Jojna f wa7ed l7dana">
+          <span class="memory-image"><img alt="Jojna f wa7ed l7dana" /></span><span class="memory-caption">Jojna f wa7ed l7dana</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo5.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-five reveal reveal-delay" tabindex="0" role="button" data-image="assets/images/photo5.jpg" data-caption="Had lmoment ghadi tb9a f 9elbi">
+          <span class="memory-image"><img alt="Had lmoment ghadi tb9a f 9elbi" /></span><span class="memory-caption">Had lmoment ghadi tb9a f 9elbi</span><span class="memory-pin">✦</span>
+        </article>
+        <!-- Bddl assets/images/photo6.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-six reveal reveal-delay-two" tabindex="0" role="button" data-image="assets/images/photo6.jpg" data-caption="Rachida, nti lfar7a dyali ♥">
+          <span class="memory-image"><img alt="Rachida, nti lfar7a dyali" /></span><span class="memory-caption">Rachida, nti lfar7a dyali ♥</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo7.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-seven reveal" tabindex="0" role="button" data-image="assets/images/photo7.jpg" data-caption="Dyali w safi 😂♥">
+          <span class="memory-image"><img alt="Dyali w safi" /></span><span class="memory-caption">Dyali w safi 😂♥</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo8.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-eight reveal reveal-delay" tabindex="0" role="button" data-image="assets/images/photo8.jpg" data-caption="Mn hna bdat 7kayatna">
+          <span class="memory-image"><img alt="Mn hna bdat 7kayatna" /></span><span class="memory-caption">Mn hna bdat 7kayatna</span><span class="memory-pin">✦</span>
+        </article>
+        <!-- Bddl assets/images/photo9.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-nine reveal reveal-delay-two" tabindex="0" role="button" data-image="assets/images/photo9.jpg" data-caption="M3ak kolchi kaywli zwin">
+          <span class="memory-image"><img alt="M3ak kolchi kaywli zwin" /></span><span class="memory-caption">M3ak kolchi kaywli zwin</span><span class="memory-pin">♥</span>
+        </article>
+        <!-- Bddl assets/images/photo10.jpg b tswira dyalk -->
+        <article class="memory-card memory-card-ten reveal" tabindex="0" role="button" data-image="assets/images/photo10.jpg" data-caption="W li jay ahla inchallah ♥">
+          <span class="memory-image"><img alt="W li jay ahla inchallah" /></span><span class="memory-caption">W li jay ahla inchallah ♥</span><span class="memory-pin">♥</span>
+        </article>
+      </div>
+
+      <div class="story-heading reveal"><p class="eyebrow">9ISSA DYALNA</p><h3>7KAYATNA, <em>nhar b nhar.</em></h3></div>
+      <div class="story-timeline">
+        <!-- Bddl lklam dakhel kol .story-step bach tzid ldhkra dyalk -->
+        <article class="story-step reveal"><span class="story-dot">01</span><div><p class="story-kicker">BIDAYAT L7KAYA</p><h4>Awel mara t3arfna ♥</h4><p>Hna t9der tktb kifach t9ablna l awal mara.</p></div></article>
+        <article class="story-step reveal reveal-delay"><span class="story-dot">02</span><div><p class="story-kicker">LKLAM L AWEL</p><h4>Awel hdra</h4><p>Wa7ed lklam sghir li 7ell bab l7ob l kbir.</p></div></article>
+        <article class="story-step reveal reveal-delay-two"><span class="story-dot">03</span><div><p class="story-kicker">DHKRANA L AWLA</p><h4>Awel tswira m3a ba3diyatna</h4><p>Tsowra w7da, walakin 7kaya kamla.</p></div></article>
+        <article class="story-step reveal"><span class="story-dot">04</span><div><p class="story-kicker">NHAR ZWIN</p><h4>Wa7ed mn ahla nharatna</h4><p>Kol tafsila fih katkhllini nbtssem.</p></div></article>
+        <article class="story-step reveal reveal-delay"><span class="story-dot">05</span><div><p class="story-kicker">DABA</p><h4>Lyoma ♥</h4><p>W mazal a7la l ayam ma jayin.</p></div></article>
+        <article class="story-step reveal reveal-delay-two"><span class="story-dot">06</span><div><p class="story-kicker">L9ODAM</p><h4>Li jay ahla inchallah</h4><p>7kayatna mazal katkteb b l7ob.</p></div></article>
+      </div>
+    </section>
+
+    <section class="future section-shell" id="future">
+      <div class="future-copy reveal"><p class="eyebrow">MN DABA L L9ODAM</p><h2>Lmosta9bal dyali<br /><em>kaybda bik.</em></h2><p>Ma bghitch ghir nhar zwin m3ak. Bghit l ayam kamlin: sba7at m3a b3d, safarat bla tartib, de7k 3la atfah 7aja, w wa7ed l3mer kamel w nti 7dani.</p><p>Inchallah ntzwjo, nbniw dar fiha l7ob, n3awno b3dyatna, w nkbro m3a b3d 7tta lch3r ywalli byed. W mazal ghadi nb9a n9olk belli nti ahla wa7da f denya.</p><button class="button button-primary" id="futureButton" type="button">W3d lik ♥</button></div>
+      <div class="future-list reveal reveal-delay"><div class="future-item"><span>01</span><div><strong>N3icho</strong><p>Kol nhar b wa7ed l9alb merta7.</p></div></div><div class="future-item"><span>02</span><div><strong>Nsafro</strong><p>Nchof l3alam w ndiro dikrayat.</p></div></div><div class="future-item"><span>03</span><div><strong>Nkbro</strong><p>Yd f yd, 7ob kber m3ana.</p></div></div></div>
+    </section>
+
+    <section class="final-memory section-shell">
+      <!-- Bddl assets/images/favorite-photo.jpg b a7la tswira 3andkom -->
+      <div class="final-memory-frame reveal">
+        <div class="final-memory-photo"><img alt="A7la tswira dyalna" /></div>
+        <p class="final-memory-caption">Had tswira kat3ni lia kter mn 1000 kelma ♥</p>
+      </div>
+      <div class="final-memory-copy reveal reveal-delay">
+        <p class="eyebrow">AKHER TSWIRA, AWEL 7OB</p>
+        <h2>Rachida…<br /><em>nti hiya l9issa.</em></h2>
+        <p>Ila kan 3andi chi 7aja wa7da ntmna tb9a m3aya f had denya, rah nti.</p>
+        <p>W ma bghitch ghir n3ich m3ak lyouma… bghit n3ich m3ak kol nhar jay ♥</p>
+      </div>
+    </section>
+
+    <section class="finale section-shell">
+      <div class="finale-inner reveal"><div class="finale-heart">♥</div><p class="eyebrow">W 7IT MAZAL LKLAM BZZAF</p><h2>Rachida, nti<br /><em>l9issa li kanbghi n3ich.</em></h2><p>De7ki daba, rah kan7sebha hdiya 🎁</p><div class="button-row"><button class="button button-primary" id="laughButton" type="button">3tini de7ketek 😂</button><button class="button button-quiet" id="shyButton" type="button">Klick ila 7chmti ♥</button></div><div class="response" id="response" aria-live="polite"></div></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Sedd tswira">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Tswira li fatet">←</button>
+    <div class="lightbox-content"><div class="lightbox-placeholder" id="lightboxPlaceholder">Zid tswira dyalk hna ♥</div><img id="lightboxImage" src="" alt="" /><p id="lightboxCaption"></p><span id="lightboxCount"></span></div>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Tswira li jay a">→</button>
+  </div>
+  <footer class="site-footer"><span>Rachida ♥ Rachida</span><span>tsaybat b l7ob khasatan l Rachida</span><span>∞</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
